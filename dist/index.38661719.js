@@ -469,51 +469,22 @@ var _engineDefault = parcelHelpers.interopDefault(_engine);
 var _point = require("./libs/point");
 let screen = new _graphicsLib.Screen();
 let brush = new _graphicsLib.Brush(screen);
-class Planet extends _objectLib.Circle {
-    constructor(x, y, dir, rad, mass){
-        super(x, y, dir, rad);
-        this.mass = mass;
-        this.vX = Math.random();
-        this.vY = Math.random();
-        this.gV = new _point.Point2D(0, 0);
-    }
-    update() {
-        let planet = planets[0];
-        if (this !== planet) {
-            this.gV.setX(Math.atan2(planet.getY() - this.getY(), planet.getX() - this.getX()) * (180 / Math.PI));
-            this.gV.setY(planet.mass / Math.pow(Math.sqrt(Math.pow(planet.getX() - this.getX(), 2) + Math.pow(planet.getY() - this.getY(), 2)), 2));
-            this.vX += Math.cos(this.gV.getX()) * (180 / Math.PI) * this.gV.getY();
-            this.vY += Math.sin(this.gV.getX()) * (180 / Math.PI) * this.gV.getY();
-        }
-        this.shift(this.vX, this.vY);
-        this.angle = Math.atan2(this.vY, this.vX) * (180 / Math.PI);
-    }
-}
-let planets = [];
-planets.push(new Planet(window.innerWidth / 2 + 50, window.innerHeight / 2, Math.random() * 360, 10, 1));
-planets.push(new Planet(window.innerWidth / 2 + 100, window.innerHeight / 2, Math.random() * 360, 10, 10));
+_objectLib.Circle.brush = brush;
+_objectLib.Square.brush = brush;
+_objectLib.Rectangle.brush = brush;
 screen.add();
 _engineDefault.default.showDebugMenu(true);
-_objectLib.Circle.brush = brush;
-_objectLib.Circle.showDebug(true);
 _engineDefault.default.run((fps, debugOn)=>{
-    planets[0].vX = 0;
-    planets[0].vY = 0;
     brush.clearScreen();
     brush.fillBackground("black");
-    planets.forEach((planet, index)=>{
-        planet.update();
-        planet.render();
-    });
     if (debugOn) {
         brush.setColor("White");
         brush.text(0, 20, `FPS: ${fps}`, 25);
         brush.text(0, 40, `CRT: ${_engineDefault.default.getCycleRunTime()}`, 25);
-        for(let i = 0; i < planets.length; i++)brush.text(0, 60 + i * 20, `Planet[${i}]: ${Math.round(planets[i].getX())}|${Math.round(planets[i].getY())}`, 25);
     }
 });
 
-},{"./libs/graphics/graphicsLib":"1fnAt","./libs/objects/objectLib":"abgDX","./libs/inputs/mouse":"abpkw","./libs/engine":"lONgo","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","./libs/point":"4jx4k"}],"1fnAt":[function(require,module,exports) {
+},{"./libs/graphics/graphicsLib":"1fnAt","./libs/objects/objectLib":"abgDX","./libs/inputs/mouse":"abpkw","./libs/engine":"lONgo","./libs/point":"4jx4k","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1fnAt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Screen", ()=>_screenDefault.default
@@ -802,36 +773,46 @@ var _shapeDefault = parcelHelpers.interopDefault(_shape);
 var _point = require("../point");
 class Circle extends _shapeDefault.default {
     static brush;
-    static debugOn = false;
-    constructor(x = 0, y = 0, angle = 0, size = 0, color = "White"){
-        super(x, y, angle, size);
+    static globalDebugOn = false;
+    constructor(x = 0, y = 0, size = 0, angle = 0, color = "White"){
+        super(x, y, angle, size, new _point.Point2D(x, y));
         this.color = color;
+        this.debugOn = false;
+        this.origin = new _point.Point2D(x, y);
     }
-    static showDebug(arg) {
-        Circle.debugOn = arg;
+    showDebug(arg) {
+        this.debugOn = arg;
+    }
+    setOrigin(x, y) {
+        this.origin.setPos(x, y);
     }
     render() {
         const brush = Circle.brush;
         brush.saveContext();
         const bounds = this.getBounds();
-        brush.circle(this.x, this.y, this.size);
-        if (Circle.debugOn) {
+        if (Circle.globalDebugOn || this.debugOn) {
             brush.setColor("lime");
-            brush.line(this.x, this.y, Math.cos(this.angle * (Math.PI / 180)) * this.size + this.x, Math.sin(this.angle * (Math.PI / 180)) * this.size + this.y);
-            bounds.forEach((point, index)=>{
-                point.rotateAround(this, this.angle);
-            });
+            brush.line(this.rotationPoint.getX(), this.rotationPoint.getY(), Math.cos(this.angle * (Math.PI / 180)) * this.size + this.rotationPoint.getX(), Math.sin(this.angle * (Math.PI / 180)) * this.size + this.rotationPoint.getY());
             brush.polyLine(bounds);
+            brush.point(this.origin.getX(), this.origin.getY(), 2);
+            brush.point(this.rotationPoint.getX(), this.rotationPoint.getY(), 2);
         }
         brush.restoreContext();
+        this.origin.setPos(this.x, this.y);
+        this.origin.rotateAround(this.rotationPoint, this.angle);
+        brush.circle(this.origin.getX(), this.origin.getY(), this.size);
     }
     getBounds() {
-        return [
-            new _point.Point2D(this.x - this.radius, this.y - this.radius),
-            new _point.Point2D(this.x + this.radius, this.y - this.radius),
-            new _point.Point2D(this.x + this.radius, this.y + this.radius),
-            new _point.Point2D(this.x - this.radius, this.y + this.radius)
+        let rbpoints = [
+            new _point.Point2D(this.x - this.size, this.y - this.size),
+            new _point.Point2D(this.x + this.size, this.y - this.size),
+            new _point.Point2D(this.x + this.size, this.y + this.size),
+            new _point.Point2D(this.x - this.size, this.y + this.size)
         ];
+        rbpoints.forEach((point, index)=>{
+            point.rotateAround(this.rotationPoint, this.angle);
+        });
+        return rbpoints;
     }
 }
 exports.default = Circle;
@@ -841,10 +822,11 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _point = require("../point");
 class Shape extends _point.Point2D {
-    constructor(x = 0, y = 0, angle = 0, size = 0){
+    constructor(x = 0, y = 0, angle = 0, size = 0, rotationPoint = new _point.Point2D(0, 0)){
         super(x, y);
         this.size = size;
         this.angle = angle;
+        this.rotationPoint = rotationPoint;
     }
     getSize() {
         return this.size;
@@ -884,6 +866,10 @@ class Point2D {
             x: this.x,
             y: this.y
         };
+    }
+    setPos(x, y) {
+        this.x = x;
+        this.y = y;
     }
     setX(x) {
         this.x = x;
@@ -960,8 +946,85 @@ class Point3D {
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"8npyT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _shape = require("./shape");
+var _shapeDefault = parcelHelpers.interopDefault(_shape);
+var _point = require("../point");
+class Rectangle extends _shapeDefault.default {
+    static brush;
+    static globalDebugOn = false;
+    constructor(x = 0, y = 0, width = 0, height = 0, angle = 0, color = "White"){
+        super(x, y, angle, [
+            width,
+            height
+        ], new _point.Point2D(x, y));
+        this.color = color;
+        this.debugOn = false;
+        this.origin = new _point.Point2D(x, y);
+    }
+    showDebug(arg) {
+        this.debugOn = arg;
+    }
+    setOrigin(x, y) {
+        this.origin.setPos(x, y);
+    }
+    getOriginX() {
+        return this.origin.getX();
+    }
+    getOriginY() {
+        return this.origin.getY();
+    }
+    setRotationPoint(x, y) {
+        this.rotationPoint.setPos(x, y);
+    }
+    render() {
+        const brush = Rectangle.brush;
+        brush.saveContext();
+        const bounds = this.getBounds();
+        if (Rectangle.globalDebugOn || this.debugOn) {
+            brush.setColor("lime");
+            brush.line(this.rotationPoint.getX(), this.rotationPoint.getY(), Math.cos(this.angle * (Math.PI / 180)) * this.size[0] + this.rotationPoint.getX(), Math.sin(this.angle * (Math.PI / 180)) * this.size[0] + this.rotationPoint.getY());
+            brush.polyLine(bounds);
+            brush.point(this.origin.getX(), this.origin.getY(), 2);
+            brush.point(this.rotationPoint.getX(), this.rotationPoint.getY(), 2);
+        }
+        brush.restoreContext();
+        const outline = [
+            new _point.Point2D(this.x - this.size[0], this.y - this.size[1]),
+            new _point.Point2D(this.x + this.size[0], this.y - this.size[1]),
+            new _point.Point2D(this.x + this.size[0], this.y + this.size[1]),
+            new _point.Point2D(this.x - this.size[0], this.y + this.size[1])
+        ];
+        this.origin.setPos(this.x, this.y);
+        outline.forEach((point, index)=>{
+            point.rotateAround(this.rotationPoint, this.angle);
+        });
+        this.origin.rotateAround(this.rotationPoint, this.angle);
+        brush.polyLine(outline);
+    }
+    getBounds() {
+        let rbpoints = [
+            new _point.Point2D(this.x - this.size[0], this.y - this.size[1]),
+            new _point.Point2D(this.x + this.size[0], this.y - this.size[1]),
+            new _point.Point2D(this.x + this.size[0], this.y + this.size[1]),
+            new _point.Point2D(this.x - this.size[0], this.y + this.size[1])
+        ];
+        rbpoints.forEach((point, index)=>{
+            point.rotateAround(this.rotationPoint, this.angle);
+        });
+        let boundingPoints = [
+            new _point.Point2D(Math.min(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.min(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())),
+            new _point.Point2D(Math.max(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.min(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())),
+            new _point.Point2D(Math.max(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.max(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())),
+            new _point.Point2D(Math.min(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.max(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())), 
+        ];
+        return boundingPoints;
+    }
+}
+exports.default = Rectangle;
 
-},{}],"cjyvd":[function(require,module,exports) {
+},{"./shape":"2D7Js","../point":"4jx4k","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"cjyvd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _shape = require("./shape");
@@ -969,34 +1032,61 @@ var _shapeDefault = parcelHelpers.interopDefault(_shape);
 var _point = require("../point");
 class Square extends _shapeDefault.default {
     static brush;
-    static debugOn = false;
+    static globalDebugOn = false;
     constructor(x = 0, y = 0, size = 0, angle = 0, color = "White"){
-        super(x, y, angle, size);
+        super(x, y, angle, size, new _point.Point2D(x, y));
         this.color = color;
+        this.debugOn = false;
+        this.origin = new _point.Point2D(x, y);
     }
-    static showDebug(arg) {
-        Square.debugOn = arg;
+    showDebug(arg) {
+        this.debugOn = arg;
+    }
+    setOrigin(x, y) {
+        this.origin.setPos(x, y);
     }
     render() {
         const brush = Square.brush;
+        brush.saveContext();
         const bounds = this.getBounds();
-        if (Square.debugOn) {
+        if (Square.globalDebugOn || this.debugOn) {
             brush.setColor("lime");
-            brush.line(this.x, this.y, Math.cos(this.angle * (Math.PI / 180)) * this.size + this.x, Math.sin(this.angle * (Math.PI / 180)) * this.size + this.y);
+            brush.line(this.rotationPoint.getX(), this.rotationPoint.getY(), Math.cos(this.angle * (Math.PI / 180)) * this.size + this.rotationPoint.getX(), Math.sin(this.angle * (Math.PI / 180)) * this.size + this.rotationPoint.getY());
             brush.polyLine(bounds);
+            brush.point(this.origin.getX(), this.origin.getY(), 2);
+            brush.point(this.rotationPoint.getX(), this.rotationPoint.getY(), 2);
         }
-        bounds.forEach((point, index)=>{
-            point.rotateAround(this, this.angle);
-        });
-        brush.polyLine(bounds);
-    }
-    getBounds() {
-        return [
+        brush.restoreContext();
+        let outline = [
             new _point.Point2D(this.x - this.size, this.y - this.size),
             new _point.Point2D(this.x + this.size, this.y - this.size),
             new _point.Point2D(this.x + this.size, this.y + this.size),
             new _point.Point2D(this.x - this.size, this.y + this.size)
         ];
+        this.origin.setPos(this.x, this.y);
+        outline.forEach((point, index)=>{
+            point.rotateAround(this.rotationPoint, this.angle);
+        });
+        this.origin.rotateAround(this.rotationPoint, this.angle);
+        brush.polyLine(outline);
+    }
+    getBounds() {
+        let rbpoints = [
+            new _point.Point2D(this.x - this.size, this.y - this.size),
+            new _point.Point2D(this.x + this.size, this.y - this.size),
+            new _point.Point2D(this.x + this.size, this.y + this.size),
+            new _point.Point2D(this.x - this.size, this.y + this.size)
+        ];
+        rbpoints.forEach((point, index)=>{
+            point.rotateAround(this.rotationPoint, this.angle);
+        });
+        let boundingPoints = [
+            new _point.Point2D(Math.min(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.min(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())),
+            new _point.Point2D(Math.max(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.min(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())),
+            new _point.Point2D(Math.max(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.max(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())),
+            new _point.Point2D(Math.min(rbpoints[0].getX(), rbpoints[1].getX(), rbpoints[2].getX(), rbpoints[3].getX()), Math.max(rbpoints[0].getY(), rbpoints[1].getY(), rbpoints[2].getY(), rbpoints[3].getY())), 
+        ];
+        return boundingPoints;
     }
 }
 exports.default = Square;

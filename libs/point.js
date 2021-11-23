@@ -12,6 +12,10 @@ export class Point2D {
   getPos() {
     return {x: this.x, y: this.y};
   }
+  setPos(x, y) {
+    this.x = x;
+    this.y = y;
+  }
   setX(x) {
     this.x = x;
   }

@@ -1,4 +1,4 @@
-15658
+15661
 108C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@babel\generator\lib\generators\template-literals.js121012626000000000 0
 110C:\Users\Damie\programmingProjects\js\Jyra\node_modules\bl\node_modules\readable-stream\experimentalWarning.js121436361000000000 0
 100C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\features\array-includes.js121436361000000000 0
@@ -51,7 +51,7 @@
 91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-minify-params\dist\index.js121436361000000000 0
 82C:\Users\Damie\programmingProjects\js\Jyra\node_modules\svgo\plugins\reusePaths.js121436361000000000 0
 92C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\modules\es.array.index-of.js121436361000000000 0
-47C:\Users\Damie\programmingProjects\js\Jyra\libs132794270329578345 1
+47C:\Users\Damie\programmingProjects\js\Jyra\libs132794314922659437 1
 95C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@parcel\packager-svg\lib\SVGPackager.js121436361000000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\es\string\trim-start.js121436361000000000 0
 69C:\Users\Damie\programmingProjects\js\Jyra\node_modules\slash\license121436361000000000 0
@@ -62,12 +62,12 @@
 104C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2017\AbstractRelationalComparison.js121436361000000000 0
 73C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\initial.js121436361000000000 0
 85C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@nodelib\fs.walk\out\index.js121436361000000000 0
-47C:\Users\Damie\programmingProjects\js\Jyra\dist132794282931207903 1
+47C:\Users\Damie\programmingProjects\js\Jyra\dist132821206111903871 1
 73C:\Users\Damie\programmingProjects\js\Jyra\node_modules\fastparse\LICENSE131853836480000000 0
 96C:\Users\Damie\programmingProjects\js\Jyra\node_modules\string.prototype.trimstart\test\tests.js121436361000000000 0
 91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\node-forge\flash\swf\SocketPool.swf121436361000000000 0
 100C:\Users\Damie\programmingProjects\js\Jyra\node_modules\verror\node_modules\core-util-is\float.patch130924525990000000 0
-53C:\Users\Damie\programmingProjects\js\Jyra\index.html132794282930487748 0
+53C:\Users\Damie\programmingProjects\js\Jyra\index.html132794283457939141 0
 82C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-overridden132794279750529911 1
 61C:\Users\Damie\programmingProjects\js\Jyra\node_modules\json5132794279752240315 1
 82C:\Users\Damie\programmingProjects\js\Jyra\node_modules\stealthy-require\README.md131387751140000000 0
@@ -78,14 +78,8 @@
 81C:\Users\Damie\programmingProjects\js\Jyra\node_modules\vm-browserify\example\run132794279673348022 1
 74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\ripemd160\index.js131685915220000000 0
 47C:\Users\Damie\programmingProjects\js\Jyra\docs132794280052056214 1
-88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-modules-local-by-default132794279748359418 1
-97C:\Users\Damie\programmingProjects\js\Jyra\node_modules\uncss\node_modules\postcss\lib\warning.js121436361000000000 0
-79C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2021\BigInt132794279715261401 1
-87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\loader-utils\lib\parseString.js121436361000000000 0
-74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\is-regex\README.md121436361000000000 0
-60C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin132794279759311906 1
 80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\sshpk\lib\formats\pem.js131898308050000000 0
-51C:\Users\Damie\programmingProjects\js\Jyra\index.js132794282447447072 0
+51C:\Users\Damie\programmingProjects\js\Jyra\index.js132821206110889772 0
 78C:\Users\Damie\programmingProjects\js\Jyra\node_modules\available-typed-arrays132794279756181207 1
 98C:\Users\Damie\programmingProjects\js\Jyra\node_modules\json-stringify-safe\test\stringify_test.js130764732900000000 0
 71C:\Users\Damie\programmingProjects\js\Jyra\node_modules\yaml\index.d.ts121436361000000000 0
@@ -108,6 +102,21 @@
 93C:\Users\Damie\programmingProjects\js\Jyra\node_modules\type-fest\source\merge-exclusive.d.ts121436361000000000 0
 72C:\Users\Damie\programmingProjects\js\Jyra\node_modules\svgo\lib\svgo.js121436361000000000 0
 76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\isFunction.js121436361000000000 0
+80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\pako\lib\zlib\inffast.js121436361000000000 0
+105C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-selector-parser\dist\__tests__\nesting.js121436361000000000 0
+80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-comments132794279750569932 1
+88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@nodelib\fs.walk\out\settings.js121436361000000000 0
+91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2018\thisNumberValue.js121436361000000000 0
+71C:\Users\Damie\programmingProjects\js\Jyra\node_modules\brace-expansion132794279755691134 1
+61C:\Users\Damie\programmingProjects\js\Jyra\node_modules\bytes132794279756141189 1
+101C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2021\Number\unsignedRightShift.js121436361000000000 0
+52C:\Users\Damie\programmingProjects\js\Jyra\README.md132816252311367875 0
+88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-modules-local-by-default132794279748359418 1
+97C:\Users\Damie\programmingProjects\js\Jyra\node_modules\uncss\node_modules\postcss\lib\warning.js121436361000000000 0
+79C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2021\BigInt132794279715261401 1
+87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\loader-utils\lib\parseString.js121436361000000000 0
+74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\is-regex\README.md121436361000000000 0
+60C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin132816246581610143 1
 71C:\Users\Damie\programmingProjects\js\Jyra\node_modules\browserify-zlib132794279751350096 1
 102C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2021\AbstractEqualityComparison.js121436361000000000 0
 97C:\Users\Damie\programmingProjects\js\Jyra\node_modules\highlight.js\scss\atelier-cave-light.scss121436361000000000 0
@@ -504,14 +513,6 @@
 79C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lilconfig\dist\index.js121436361000000000 0
 85C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-minify-gradients\dist132794279685069895 1
 64C:\Users\Damie\programmingProjects\js\Jyra\node_modules\xmlchars132794279744968649 1
-80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\pako\lib\zlib\inffast.js121436361000000000 0
-105C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-selector-parser\dist\__tests__\nesting.js121436361000000000 0
-80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-comments132794279750569932 1
-61C:\Users\Damie\programmingProjects\js\Jyra\node_modules\bytes132794279756141189 1
-101C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2021\Number\unsignedRightShift.js121436361000000000 0
-88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@nodelib\fs.walk\out\settings.js121436361000000000 0
-91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2018\thisNumberValue.js121436361000000000 0
-71C:\Users\Damie\programmingProjects\js\Jyra\node_modules\brace-expansion132794279755691134 1
 97C:\Users\Damie\programmingProjects\js\Jyra\node_modules\uncss\node_modules\commander\package.json132794279746919081 0
 89C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lmdb-store\test\node-lmdb.test.js121436361000000000 0
 77C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\reduceRight.js121436361000000000 0
@@ -1631,8 +1632,8 @@
 77C:\Users\Damie\programmingProjects\js\Jyra\node_modules\assert-plus\README.md130983943170000000 0
 85C:\Users\Damie\programmingProjects\js\Jyra\node_modules\json-parse-even-better-errors132794279752590377 1
 112C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@parcel\watcher\prebuilds\linux-x64\node.napi.glibc.node121436361000000000 0
-76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\json-schema-traverse132794279752570377 1
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2018\GetIterator.js121436361000000000 0
+76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\json-schema-traverse132794279752570377 1
 99C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-normalize-repeat-style\package.json132794279750059800 0
 78C:\Users\Damie\programmingProjects\js\Jyra\node_modules\xxhash-wasm\types.d.ts121436361000000000 0
 100C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\features\rel-noreferrer.js121436361000000000 0
@@ -5161,9 +5162,9 @@
 75C:\Users\Damie\programmingProjects\js\Jyra\node_modules\parse5\package.json132794279751120044 0
 89C:\Users\Damie\programmingProjects\js\Jyra\node_modules\highlight.js\lib\languages\php.js121436361000000000 0
 74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\punycode\README.md131714306640000000 0
-78C:\Users\Damie\programmingProjects\js\Jyra\node_modules\public-encrypt\LICENSE121436361000000000 0
 78C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\_composeArgs.js121436361000000000 0
 82C:\Users\Damie\programmingProjects\js\Jyra\node_modules\public-encrypt\.travis.yml121436361000000000 0
+78C:\Users\Damie\programmingProjects\js\Jyra\node_modules\public-encrypt\LICENSE121436361000000000 0
 75C:\Users\Damie\programmingProjects\js\Jyra\node_modules\performance-now\lib132794279687240372 1
 77C:\Users\Damie\programmingProjects\js\Jyra\node_modules\public-encrypt\mgf.js121436361000000000 0
 114C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-modules-values\node_modules\postcss\lib\postcss.js121436361000000000 0
@@ -6346,7 +6347,7 @@
 82C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-empty\dist132794279686600237 1
 90C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-empty\package.json132794279750249861 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-empty\README.md121436361000000000 0
-68C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\rectangle.js132794253198603616 0
+68C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\rectangle.js132821206354169059 0
 95C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss-discard-duplicates\CHANGELOG.md121436361000000000 0
 82C:\Users\Damie\programmingProjects\js\Jyra\node_modules\nth-check\lib\compile.d.ts121436361000000000 0
 80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2019\Type.js121436361000000000 0
@@ -6449,6 +6450,7 @@
 74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\nwsapi\src\modules132794279688520694 1
 75C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss\lib\node.js121436361000000000 0
 76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\is-arguments\LICENSE121436361000000000 0
+69C:\Users\Damie\programmingProjects\js\Jyra\dist\index.38661719.js.map132821206111883868 0
 76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\postcss\lib\parse.js121436361000000000 0
 84C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\es\instance\slice.js121436361000000000 0
 75C:\Users\Damie\programmingProjects\js\Jyra\node_modules\escalade\index.d.ts121436361000000000 0
@@ -7438,6 +7440,7 @@
 100C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-select\lib\pseudo-selectors\filters.d.ts121436361000000000 0
 69C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\get.js121436361000000000 0
 73C:\Users\Damie\programmingProjects\js\Jyra\node_modules\is-bigint\.github132794279694275116 1
+57C:\Users\Damie\programmingProjects\js\Jyra\libs\engine.js132794348764085079 0
 68C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\gt.js121436361000000000 0
 101C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2019\CreateDataPropertyOrThrow.js121436361000000000 0
 69C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\gte.js121436361000000000 0
@@ -8157,7 +8160,6 @@
 80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\functionsIn.js121436361000000000 0
 85C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\string\bold.js121436361000000000 0
 74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\getOr.js121436361000000000 0
-60C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs\touch132794246810190200 1
 76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\groupBy.js121436361000000000 0
 70C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-select\lib132794279693494876 1
 71C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\gt.js121436361000000000 0
@@ -8168,7 +8170,7 @@
 81C:\Users\Damie\programmingProjects\js\Jyra\node_modules\is-absolute-url\readme.md121436361000000000 0
 81C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\includesFrom.js121436361000000000 0
 76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\indexBy.js121436361000000000 0
-58C:\Users\Damie\programmingProjects\js\Jyra\dist\index.html132794280667733640 0
+58C:\Users\Damie\programmingProjects\js\Jyra\dist\index.html132820987041737580 0
 76C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\indexOf.js121436361000000000 0
 67C:\Users\Damie\programmingProjects\js\Jyra\node_modules\asn1.js\lib132794279682159135 1
 80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lodash\fp\indexOfFrom.js121436361000000000 0
@@ -8602,7 +8604,7 @@
 97C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2019\DeletePropertyOrThrow.js121436361000000000 0
 75C:\Users\Damie\programmingProjects\js\Jyra\node_modules\is-date-object\test132794279693644986 1
 81C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lmdb-store\dict\dict2.txt121436361000000000 0
-65C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\circle.js132794269223038556 0
+65C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\circle.js132821195588266546 0
 84C:\Users\Damie\programmingProjects\js\Jyra\node_modules\lmdb-store\dependencies\lmdb132794279672817893 1
 86C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\features\math\isubh.js121436361000000000 0
 92C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\modules\es.number.epsilon.js121436361000000000 0
@@ -8924,7 +8926,6 @@
 95C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\modules\esnext.weak-map.from.js121436361000000000 0
 102C:\Users\Damie\programmingProjects\js\Jyra\node_modules\jsdom\lib\jsdom\living\nodes\ChildNode-impl.js121436361000000000 0
 100C:\Users\Damie\programmingProjects\js\Jyra\node_modules\jsdom\lib\jsdom\living\nodes\Comment-impl.js121436361000000000 0
-63C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs\keyboard132794246678421914 1
 98C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@babel\types\lib\definitions\typescript.js121012626000000000 0
 101C:\Users\Damie\programmingProjects\js\Jyra\node_modules\jsdom\lib\jsdom\living\nodes\Document-impl.js121436361000000000 0
 115C:\Users\Damie\programmingProjects\js\Jyra\node_modules\globals\node_modules\type-fest\source\iterable-element.d.ts121436361000000000 0
@@ -11485,7 +11486,7 @@
 93C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2015\SetIntegrityLevel.js121436361000000000 0
 88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2015\StringCreate.js121436361000000000 0
 98C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2015\StringGetIndexProperty.js121436361000000000 0
-56C:\Users\Damie\programmingProjects\js\Jyra\libs\graphics132794246087068274 1
+56C:\Users\Damie\programmingProjects\js\Jyra\libs\graphics132794311722161817 1
 89C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@parcel\runtime-react-refresh\src132794279669087048 1
 83C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\es\instance\trim.js121436361000000000 0
 94C:\Users\Damie\programmingProjects\js\Jyra\node_modules\es-abstract\2015\TestIntegrityLevel.js121436361000000000 0
@@ -11847,7 +11848,6 @@
 88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\cssstyle\lib\properties\clear.js121436361000000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\cssstyle\lib\properties\clip.js121436361000000000 0
 93C:\Users\Damie\programmingProjects\js\Jyra\node_modules\cssstyle\lib\properties\floodColor.js121436361000000000 0
-66C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\acorn132794279757641527 0
 93C:\Users\Damie\programmingProjects\js\Jyra\node_modules\cssstyle\lib\properties\fontFamily.js121436361000000000 0
 80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@parcel\packager-svg\lib132794279669037064 1
 91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\cssstyle\lib\properties\fontSize.js121436361000000000 0
@@ -12112,6 +12112,7 @@
 90C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-tree\lib\common\TokenStream.js121436361000000000 0
 80C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-tree\data\patch.json121436361000000000 0
 86C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-selector-tokenizer\LICENSE121436361000000000 0
+68C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\objectLib.js132794358708396440 0
 91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-selector-tokenizer\package.json132794279754360763 0
 91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-selector-tokenizer\lib\parse.js121436361000000000 0
 84C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-select\lib\attributes.js121436361000000000 0
@@ -12150,6 +12151,7 @@
 92C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@nodelib\fs.walk\out\readers\sync.js121436361000000000 0
 116C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-modules-loader-core\node_modules\strip-ansi\package.json132794279755431014 0
 113C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-modules-loader-core\node_modules\strip-ansi\readme.md131005304840000000 0
+65C:\Users\Damie\programmingProjects\js\Jyra\libs\graphics\brush.js132794411603413685 0
 116C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-modules-loader-core\node_modules\source-map\CHANGELOG.md131369414900000000 0
 91C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@babel\helper-module-transforms\lib132794279677958174 1
 111C:\Users\Damie\programmingProjects\js\Jyra\node_modules\css-modules-loader-core\node_modules\source-map\LICENSE131369414900000000 0
@@ -12498,6 +12500,7 @@
 98C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\object\define-properties.js121436361000000000 0
 96C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\object\define-property.js121436361000000000 0
 94C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\object\define-setter.js121436361000000000 0
+71C:\Users\Damie\programmingProjects\js\Jyra\libs\graphics\graphicsLib.js132794312530596804 0
 88C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\object\entries.js121436361000000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\object\freeze.js121436361000000000 0
 93C:\Users\Damie\programmingProjects\js\Jyra\node_modules\core-js\stable\object\from-entries.js121436361000000000 0
@@ -13626,7 +13629,7 @@
 83C:\Users\Damie\programmingProjects\js\Jyra\node_modules\content-disposition\LICENSE130555766350000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\regions\KW.js121436361000000000 0
 85C:\Users\Damie\programmingProjects\js\Jyra\node_modules\constants-browserify\build.sh130812848470000000 0
-54C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs132794247114909158 1
+54C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs132794381320778409 1
 86C:\Users\Damie\programmingProjects\js\Jyra\node_modules\constants-browserify\README.md130812848470000000 0
 84C:\Users\Damie\programmingProjects\js\Jyra\node_modules\constants-browserify\test.js130812848470000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\console-browserify\.testem.json121436361000000000 0
@@ -13775,6 +13778,7 @@
 107C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@parcel\source-map\parcel_sourcemap_wasm\src\lib.rs121436361000000000 0
 97C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\features\canvas-text.js121436361000000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\regions\CY.js121436361000000000 0
+65C:\Users\Damie\programmingProjects\js\Jyra\dist\index.38661719.js132821206111853857 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\regions\DK.js121436361000000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\regions\DM.js121436361000000000 0
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\caniuse-lite\data\regions\DO.js121436361000000000 0
@@ -15604,7 +15608,6 @@
 87C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@babel\compat-data\package.json132794279742158022 0
 100C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@babel\compat-data\data\plugin-bugfixes.json121012626000000000 0
 83C:\Users\Damie\programmingProjects\js\Jyra\node_modules\@babel\code-frame\README.md121012626000000000 0
-70C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\acorn.cmd132794279757641527 0
 70C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\ansi-html132794279757671526 0
 74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\ansi-html.cmd132794279757671526 0
 74C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\ansi-html.ps1132794279757671526 0
@@ -15647,13 +15650,13 @@
 69C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\uuid.ps1132794279759041831 0
 66C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\which132794279759091841 0
 70C:\Users\Damie\programmingProjects\js\Jyra\node_modules\.bin\which.cmd132794279759091841 0
-55C:\Users\Damie\programmingProjects\js\Jyra\libs\objects132794264469967415 1
-56C:\Users\Damie\programmingProjects\js\Jyra\libs\point.js132794276272327130 0
+55C:\Users\Damie\programmingProjects\js\Jyra\libs\objects132794312595291027 1
+56C:\Users\Damie\programmingProjects\js\Jyra\libs\point.js132821185054181235 0
 54C:\Users\Damie\programmingProjects\js\Jyra\libs\screen132794246420505784 1
-64C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\shape.js132794274794803915 0
-65C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\square.js132794253132678019 0
-61C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs\device132794247114909158 1
-60C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs\mouse132794246735146219 1
+64C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\shape.js132821178183313200 0
+65C:\Users\Damie\programmingProjects\js\Jyra\libs\objects\square.js132821200028288374 0
+63C:\Users\Damie\programmingProjects\js\Jyra\libs\inputs\mouse.js132794386102363386 0
+66C:\Users\Damie\programmingProjects\js\Jyra\libs\graphics\screen.js132794313793007955 0
 65C:\Users\Damie\programmingProjects\js\Jyra\dist\index.94538dff.js132794282924185253 0
 69C:\Users\Damie\programmingProjects\js\Jyra\dist\index.94538dff.js.map132794282924539607 0
 65C:\Users\Damie\programmingProjects\js\Jyra\dist\index.bcbe4d42.js132794280667733640 0
